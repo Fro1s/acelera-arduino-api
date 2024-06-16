@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/auth')->group(base_path('routes/api/auth.php'));
 Route::prefix('/user')->group(base_path('routes/api/user.php'));
-
+Route::prefix('/arduino')->group(base_path('routes/api/arduino.php'));
 
 Route::get('/', function () {
     return ReturnApi::success('Running');
